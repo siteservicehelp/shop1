@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+ <html lang="eng">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>интернет-магазин</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+ </head>
+ <body>
+   <div class="header">
+      <div class="inner-header">
+         <div class="wrapper">
+            <header>
+              <ul class="hdr-list">
+               <li>
+                  <a href="shop.html"><img src="img/logo.png" alt="logo"></a>
+               </li>
+               <li class="description">
+                  интернет-магазин<br />женской одежды
+               </li>
+               <li>
+                  <a href="shop.html" class="basket"><span class="fs18">255</span> товаров<br />на сумму <span class="fs18">800 000</span> грн.</a>
+               </li>
+              </ul>
+              <div class="info-block">
+               <ul class="net-icons">
+                  <li><a href="shop.html" class="vk"></a></li>
+                  <li><a href="shop.html" class="fb"></a></li>
+                  <li><a href="shop.html" class="tw"></a></li>
+               </ul>
+               <span class="tel">+380 50 555-5555</span>
+               <ul class="registration">
+                  <li><a href="shop.html">Войти</a>
+                    <div class="popup">
+                      <h2 class="pop-title">Вход в интернет-магазин</h2>
+                      <span class="close"></span>
+                      <p><input type="text" name="email" placeholder="Электронная почта*"></p>
+                      <p><input type="text" name="password" placeholder="Пароль*"></p>
+                      <label class="rememberme" for="member"><input type="checkbox" id="user-contract"> Запомнить меня</label>
+                      <ul class="enter">
+                      <li><input type="button" value="Войти"><li>
+                      <li class="button-pas"><a href="shop.html">Восстановить пароль</a><li>
+                    </div>
+                  </li>
+                  <li><a href="shop.html">Зарегистрироваться</a>
+                    <div class="popup">
+                      <h2 class="pop-title">Регистрация</h2>
+                      <span class="close"></span>
+                      <p><input type="text" name="name" placeholder="Ваше имя*"></p>
+                      <p><input type="text" name="email" placeholder="Электронная почта*"></p>
+                      <p><input type="text" name="password" placeholder="Ваш будущий пароль*"></p>
+                      <input type="button" value="Зарегистрироваться">
+                      <label for="user-contract"><input type="checkbox" id="user-contract"> пользовательское соглашение</label>
+                    </div>
+                  </li>
+               </ul>
+              </div>
+            </header>
+         </div>
+      </div>
+   </div>
+ <div class="nav">
+   <div class="nav-inner">
+      <div class="wrapper">
+         <nav>
+            <ul>
+               <li><a href="shop.html">Главная</a></li>
+               <li><a href="shop.html">О фирме</a></li>
+               <li>
+                  <a href="shop.html">Каталог</a>
+                  <ul>
+                     <li><a href="shop.html">Носки</a></li>
+                     <li><a href="shop.html">Трусы</a></li>
+                     <li><a href="shop.html">Шарфы</a></li>
+                     <li><a href="shop.html">Обувь</a></li>
+                  </ul>
+               </li>
+               <li><a href="shop.html">Новости</a></li>
+               <li><a href="shop.html">Статьи</a></li>
+               <li><a href="shop.html">Оплата</a></li>
+               <li><a href="shop.html">Доставка</a></li>
+               <li><a href="shop.html">Контакты</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+ </div>
+ <div class="main">
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="products-name">
+        <ul>
+          <li><a class="active" href="shop.html">пальто</a></li>
+          <li><a href="shop.html">плащ</a></li>
+          <li><a href="shop.html">ветровка</a></li>
+          <li><a href="shop.html">пуховик</a></li>
+          <li><a href="shop.html">шуба</a></li>
+        </ul>
+      </div>
+    <form action="/" method="post">
+      <div class="sb-block options">
+      <h3 class="title">Подбор по параметрам</h3>
+      <ul>
+        <li><a href="shop.html" class="china">Китай</a></li>
+        <li><a href="shop.html" class="china 41">41</a></li>
+        <li><a href="shop.html" class="reset">Сбросить фильтры</a></li>
+      </ul>
+    </div>
+    <div class="sb-block country">
+      <h3 class="title">Производитель</h3>
+      <ul>
+        <li><a href="shop.html">Китай</a></li>
+        <li><a href="shop.html">Турция</a></li>
+        <li><a href="shop.html">Россия</a></li>
+        <li><a href="shop.html">Украина</a></li>
+      </ul>      
+    </div>
+    <div class="sb-block seasons">
+      <h3 class="title">Сезон</h3>
+      <ul>
+        <li><label><input type="checkbox" name="win" value="win"> зима</label></li>
+        <li><label><input type="checkbox" name="spring" value="spring"> весна</label></li>
+        <li><label><input type="checkbox" name="summer" value="summer" checked> лето</label></li>
+        <li><label><input type="checkbox" name="autumn" value="autumn"> осень</label></li>
+      </ul>
+    </div>
+    <div class="sb-block sizes">
+      <h3 class="title">Размер </h3>
+      <ul>
+        <li><label><input type="checkbox" name="30" value="30"> 30</label></li>
+        <li><label><input type="checkbox" name="34" value="34"> 34</label></li>
+        <li><label><input type="checkbox" name="38" value="38"> 38</label></li>
+        <li><label><input type="checkbox" name="31" value="31" checked> 31</label></li>
+        <li><label><input type="checkbox" name="35" value="35"> 35</label></li>
+        <li><label><input type="checkbox" name="39" value="39" checked> 39</label></li>
+        <li><label><input type="checkbox" name="32" value="32"> 32</label></li>
+        <li><label><input type="checkbox" name="36" value="36" checked> 36</label></li>
+        <li><label><input type="checkbox" name="40" value="40"> 40</label></li>
+        <li><label><input type="checkbox" name="33" value="33"> 33</label></li>
+        <li><label><input type="checkbox" name="37" value="37"> 37</label></li>
+        <li><label><input type="checkbox" name="41" value="41"> 41</label></li>
+      </ul>
+    </div>
+    <div class="sb-block price">
+      <h3 class="title">Цена</h3>
+      <ul>
+        <li><a href="shop.html">0-500</a></li>
+        <li><a href="shop.html">500-1000</a></li>
+        <li><a href="shop.html">1000-1500</a></li>
+        <li><a href="shop.html">1500-3000</a></li>
+      </ul>      
+    </div>
+    <div class="sb-block new">
+      <h3 class="title">новинка/скидка</h3>
+      <ul>
+        <li><label><input type="checkbox" name="sale" value="sale"> Акции</label></li>
+        <li><label><input type="checkbox" name="news" value="news"> Новинки</label></li>
+      </ul>
+    </div>
+    <div class="sb-block materials">
+      <h3 class="title">материал</h3>
+      <ul>
+        <li class="wool"><label><input type="checkbox" name="wool" value="wool"> шерсть</label></li>
+        <li class="cotton"><label><input type="checkbox" name="cotton" value="cotton"> подкладка хлопок</label></li>
+      </ul>
+    </div>
+    <div class="sb-block color">
+      <h3 class="title">цвет</h3>
+      <ul>
+        <li><label><input type="checkbox" name="milk" value="milk"> молоко</label></li>
+        <li><label><input type="checkbox" name="pink" value="pink"> розовый</label></li>
+        <li><label><input type="checkbox" name="blue" value="blue"> голубой</label></li>
+        <li><label><input type="checkbox" name="green" value="green"> зеленый</label></li>
+      </ul>
+    </div>
+    </form>
+    <address>
+      <p>Украина, г. Харьков,<br />ул. Героев Труда 7</p>
+      <p>Т.Ц. ДАФИ<br />1 сектор, павильон 122 </p>
+      <p>+380 (066) 66-101-40<br />+380 (066) 55-103-11 </p>
+      <a href="shop.html">Схема проезда</a>
+    </address>
+    </div>
+    <div class="right-col">
+      <div class="search-block">
+        <form class="search-form" action="index.html" method="post">
+          <input type="text" name="search" placeholder="Введите запрос...">
+          <input type="button" name="btn-form" value="поиск">
+        </form>
+        <div class="bread-crumbs">
+          <a href="index.html">главная</a> <span> / пальто</span>
+        </div>
+      </div>
+      <ul class="products-list">
+        <li>
+          <img src="img/img1.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+          <ul class="spec">
+            <li class="red">новинка</li>
+          </ul>
+        </li>
+        <li>
+          <img src="img/img2.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img3.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+          <ul class="spec">
+            <li class="red">новинка</li>
+          </ul>
+        </li>
+        <li>
+          <img src="img/img4.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img1.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li class="active">
+          <img src="img/img2.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img3.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img4.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+          <ul class="spec">
+            <li class="green">скидка 5%</li>
+          </ul>
+        </li>
+        <li>
+          <img src="img/img1.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+          <ul class="spec">
+            <li class="red">новинка</li>
+          </ul>
+        </li>
+        <li>
+          <img src="img/img2.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+          <ul class="spec">
+            <li class="red">новинка</li>
+          </ul>
+        </li>
+        <li>
+          <img src="img/img3.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img4.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img1.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img2.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+          <ul class="spec">
+            <li class="green">скидка 5%</li>
+          </ul>
+        </li>
+        <li>
+          <img src="img/img3.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="img/img4.jpg" alt="image">
+          <div class="product">
+            <p>Пальто Дуэт</p>
+            <p>Арт. SD-345H</p>
+            <div class="price-block">
+              <p class="old-price">1000 грн.</p>
+              <p class="prices">850.50 грн.</p>
+            </div>
+          </div>
+          <ul class="spec">
+            <li class="green">скидка 5%</li>
+          </ul>
+        </li>
+      </ul>
+       <ul class="pager">
+         <li><a href="shop.html">« предыдущая</a></li>
+         <li><a class="active" href="shop.html">1</a></li>
+         <li><a href="shop.html">2</a></li>
+         <li><a href="shop.html">3</a></li>
+         <li><a href="shop.html">следующая »</a></li>
+       </ul>
+    </div>
+  </div>
+ </div>
+<div class="footer">
+  <div class="wrapper">
+    <footer>
+      <div class="right-footb">
+        <ul>
+          <li>
+            <p>Украина, г. Харьков</p>
+            <p>ул. Любая 16</p>
+          </li>
+          <li>
+            <p>e-mail: <a href="mailto:milena@kharkov.com">milena@kharkov.com</a></p>
+            <p>тел. +38 (057) 555-10-55</p>
+          </li>
+        </ul>
+        <a href="shop.html">Условия использования сайта</a>
+      </div>
+      <div class="left-footb">
+        <a href="shop.html"><img src="img/logo-footer.png" alt="logo-mini"></a>
+        <p>© Милена 2008-2013 Все права защищены</p>
+        <p>© создание сайта <a href="shop.html">web-creator</a> 2013</p>
+      </div>
+    </footer>
+  </div>
+</div>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
